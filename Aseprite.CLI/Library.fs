@@ -5,6 +5,7 @@ open Argu
 module CLI =
         
     type Arguments =
+        | [<MainCommand; ExactlyOnce; Last>] Files of files:string list
         | Shell
         | [<AltCommandLine("-b")>] Batch
         | [<AltCommandLine("-p")>] Preview
@@ -52,6 +53,7 @@ module CLI =
         interface IArgParserTemplate with
             member s.Usage =
                 match s with
+                | Files _ -> "Aseprite files to process"
                 | Shell -> "Start an interactive console to execute scripts"
                 | Batch -> "Do not start the UI"
                 | Preview -> "Do not execute actions, just print what will be done"
