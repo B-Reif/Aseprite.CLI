@@ -7,6 +7,8 @@
         <Description>Argument parser for Aseprite CLI</Description>
         <PackageProjectUrl>https://github.com/B-Reif/Aseprite.CLI</PackageProjectUrl>
         <RepositoryUrl>https://github.com/B-Reif/Aseprite.CLI</RepositoryUrl>
+        <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+        <PackageVersion>1.0.1</PackageVersion>
     </PropertyGroup>
 
     <ItemGroup>
