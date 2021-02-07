@@ -5,7 +5,7 @@ Aseprite.CLI is a class library for working with Aseprite command line arguments
 ## Installation
 Add Aseprite.CLI from [nuget](https://www.nuget.org/packages/Aseprite.CLI/).
 
-`dotnet add package Aseprite.CLI --version 1.0.1`
+`dotnet add package Aseprite.CLI`
 
 ## Usage
 ```f#
